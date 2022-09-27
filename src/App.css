@@ -84,3 +84,22 @@ p{
   width: 15px;
   height: 15px;
 }
+
+@media screen and (max-width: 500px) {
+  body{
+    padding: 20px;
+  }
+  
+  .App{
+    padding: 10px;
+  }
+
+  .separator{
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    margin-top: -10px;
+    left: 42%;
+  }
+}

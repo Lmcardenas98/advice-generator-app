@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+:root{
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-size: 28px;
+  background-color: var(--Dark-Blue);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background-color: var(--Dark-Grayish-Blue);
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.separator{
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.separator img{
+  width: 100%;
+}
+
+h1{
+  font-size: .4em;
+  color: var(--Neon-Green);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+p{
+  color: var(--Light-Cyan);
+  text-align: center;
+  height: 100%;
+  font-size: .7em;
+}
+
+.container-btn{
+  position: relative;
+  width: 100%;
+}
+
+.btn{
+  width: 40px;
+  height: 40px;
+  background-color: var(--Neon-Green);
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 44%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  box-shadow: 0 0 20px var(--Neon-Green);
+}
+
+.btn img{
+  width: 15px;
+  height: 15px;
 }

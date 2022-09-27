@@ -71,7 +71,8 @@ p{
   display: grid;
   place-items: center;
   position: absolute;
-  left: 44%;
+  left: 50%;
+  margin-left: -20px;
   margin-top: 8px;
   cursor: pointer;
 }
@@ -91,7 +92,8 @@ p{
   }
   
   .App{
-    padding: 10px;
+    padding: 20px 10px 10px ;
+    /* max-width: 370px; */
   }
 
   .separator{
@@ -100,6 +102,5 @@ p{
 
   .btn{
     margin-top: -10px;
-    left: 42%;
   }
 }

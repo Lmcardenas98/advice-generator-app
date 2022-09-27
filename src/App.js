@@ -13,7 +13,7 @@ function App() {
                           .then(resp => resp.json())
                           .then(resp => setApi(resp.slip))
   }, [random])
-  console.log(random)
+  
   return (
     <div className="App">
       <h1>ADVICE #{api.id}</h1>
